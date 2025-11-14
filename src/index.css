@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.primary-text {
+    color: #1C1C1E;
+}
+.secondary-text {
+    color: #636366;
+}
+.border-pri {
+    border: 1px solid #c6c6d0;
+}
+
+
+.primary-bg {
+    background-color: #007AFF;
+}
+.hoverButton:hover {
+    background-color: #007AFF;
+    color: white;
+    border: none;
+}
+
+.orange-text{
+    color: #FF9E2F;
+}
+
+.orange-bg{
+    background-color: #FF9E2F1A;
+}
+.blue-text {
+    color: #007AFF;
+}
+.red-text{
+    color: #FF3B30;
+}
+.red-bg{
+    background-color: #FF3B301A;
+}
+.green-color{
+    color: #28BA3E;
+}
+.green-bg{
+    background: #28BA3E1A;
+}
+.blue-border{
+    border: 1px solid #007AFF;
+}
+.blue-basic{
+    border: 1px solid #007AFF;
+    color: #007AFF;
+}
+.blue-extra{
+    background-color: #007AFF;
+    color: white;
+}
+
+/* Keep number input arrows always visible in WebKit browsers */
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1 !important;
+  display: inline !important;
+
+} */
+
+/* Make sure the browser shows native number input style */
+/* input[type=number] {
+  appearance: number-input;
+  -webkit-appearance: number-input;
+  
+}  */
