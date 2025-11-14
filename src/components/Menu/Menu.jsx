@@ -37,18 +37,18 @@ const Menu = () => {
 
                 </Link>
 
-                    {/* 
-                  <Link to="/perfomance" className='flex items-center gap-2'>
-                <RxDashboard />
-                Perfomance
+                 
+                  <Link to="/willToday" className='flex items-center gap-2'>
+               
+                আজকে যাবে 
 
                 </Link>
-
-                  <Link to="/orders" className='flex items-center gap-2'>
-                <LuClipboardList />
-                Orders
+   
+                  <Link to="/allDelivery" className='flex items-center gap-2'>
+                All delivery
 
                 </Link>
+                {/* 
                   <Link to="/payments" className='flex items-center gap-2'>
                 <LuClipboardList />
                 Payments

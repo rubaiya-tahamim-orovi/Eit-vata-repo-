@@ -8,6 +8,8 @@ import Root from './components/Root/Root.jsx';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import Payment from './components/Payment/Payment.jsx';
 import Todays from './components/Delivery/Todays.jsx';
+import WillToday from './components/Delivery/WillToday.jsx';
+import AllDelivery from './components/Delivery/AllDelivery.jsx';
 // import Profile from './components/Profile/Profile.jsx';
 // import Products from './components/Products/Products.jsx';
 // import Advertisement from './components/Advertisement/Advertisement.jsx';
@@ -39,14 +41,14 @@ const router = createBrowserRouter([
         path: '/toddelivery',
         element: <Todays></Todays>
       },
-  //     {
-  //       path: '/advertisement',
-  //       element : <Advertisement></Advertisement>
-  //     },
-  //     {
-  //       path: '/orders',
-  //       element: <Orders></Orders>
-  //     },
+      {
+        path: '/willToday',
+        element : <WillToday></WillToday>
+      },
+      {
+        path: '/allDelivery',
+        element: <AllDelivery></AllDelivery>
+      },
   //     {
   //       path: '/workHours',
   //     element: <WorkHours></WorkHours>
