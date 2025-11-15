@@ -59,12 +59,13 @@ const Menu = () => {
                আজকের জমা
 
                 </Link>
-                  {/* 
-                  <Link to="/activeAds" className='flex items-center gap-2'>
-               <GrAnnounce />
-                ActiveAds
+                 
+                  <Link to="/goToProfile" className='flex items-center gap-2'>
+              
+                Go to Profile
 
                 </Link>
+                 {/* 
                   <Link to="/expireAds" className='flex items-center gap-2'>
                <GrAnnounce />
                 Expire Ads
