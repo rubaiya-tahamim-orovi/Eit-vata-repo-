@@ -69,8 +69,8 @@ const Todays = () => {
           <td className="border border-gray-400 text-center"></td>
           <td className="border border-gray-400 text-center text-green-600">300</td>
           <td className="border border-gray-400 text-center">12/03/2025 1.00 PM</td>
-          <td className="border border-gray-400 text-center">
-            <CiMenuKebab className="border border-gray-300 py-0.5 text-xl" />
+          <td className="border border-gray-400 py-1 flex justify-center text-center">
+            <CiMenuKebab className="border border-gray-300 py-0.5 text-xl text-center" />
           </td>
         </tr>
       </tbody>
@@ -91,7 +91,7 @@ const Todays = () => {
       <p><span className="font-semibold">ড্রাইভার:</span> —</p>
       <p><span className="font-semibold">মোট ডেলিভারি:</span> <span className="text-green-600">300</span></p>
       <p><span className="font-semibold">তারিখ ও সময়:</span> 12/03/2025 1.00 PM</p>
-      <div className="flex justify-end mt-2">
+      <div className="flex justify-end mt-2 ">
         <CiMenuKebab className="border border-gray-300 py-0.5 text-xl" />
       </div>
     </div>
