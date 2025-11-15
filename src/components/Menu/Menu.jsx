@@ -48,17 +48,18 @@ const Menu = () => {
                 All delivery
 
                 </Link>
-                {/* 
+              
                   <Link to="/payments" className='flex items-center gap-2'>
-                <LuClipboardList />
-                Payments
+               
+               বাকি খাতা 
 
                 </Link>
-                  <Link to="/advertisement" className='flex items-center gap-2'>
-               <GrAnnounce />
-                Advertisement
+                  <Link to="/todayJoma" className='flex items-center gap-2'>
+               
+               আজকের জমা
 
                 </Link>
+                  {/* 
                   <Link to="/activeAds" className='flex items-center gap-2'>
                <GrAnnounce />
                 ActiveAds

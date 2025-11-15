@@ -10,6 +10,7 @@ import Payment from './components/Payment/Payment.jsx';
 import Todays from './components/Delivery/Todays.jsx';
 import WillToday from './components/Delivery/WillToday.jsx';
 import AllDelivery from './components/Delivery/AllDelivery.jsx';
+import AjkerJoma from './components/BakiKhata/AjkerJoma.jsx';
 // import Profile from './components/Profile/Profile.jsx';
 // import Products from './components/Products/Products.jsx';
 // import Advertisement from './components/Advertisement/Advertisement.jsx';
@@ -49,10 +50,10 @@ const router = createBrowserRouter([
         path: '/allDelivery',
         element: <AllDelivery></AllDelivery>
       },
-  //     {
-  //       path: '/workHours',
-  //     element: <WorkHours></WorkHours>
-  //     },
+      {
+        path: '/todayJoma',
+      element: <AjkerJoma></AjkerJoma>
+      },
   //     {
   //       path: '/store',
   //       element: <Store></Store>
