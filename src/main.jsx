@@ -12,6 +12,8 @@ import WillToday from './components/Delivery/WillToday.jsx';
 import AllDelivery from './components/Delivery/AllDelivery.jsx';
 import AjkerJoma from './components/BakiKhata/AjkerJoma.jsx';
 import GoToProfile from './components/Delivery/GoToProfile.jsx';
+import AjJomaDebe from './components/BakiKhata/AjJomaDebe.jsx';
+import SobBakiList from './components/BakiKhata/SobBakiList.jsx';
 
 
 const router = createBrowserRouter([
@@ -47,14 +49,14 @@ const router = createBrowserRouter([
         path: '/goToProfile',
         element: <GoToProfile></GoToProfile>
       },
-  //     {
-  //       path: '/storeList',
-  //       element: <StoreList></StoreList>
-  //     },
-  // {
-  //   path: '/perfomance',
-  //   element: <Perfomance></Perfomance>
-  // },
+      {
+        path: '/ajkeJomaDebe',
+        element: <AjJomaDebe></AjJomaDebe>
+      },
+  {
+    path: '/sobBaki',
+    element: <SobBakiList></SobBakiList>
+  },
   // {
   //   path: '/activeAds',
   //   element: <ActiveAds></ActiveAds>

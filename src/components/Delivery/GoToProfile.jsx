@@ -53,7 +53,7 @@ const GoToProfile = () => {
 
             {/* name of each tab group should be unique */}
 <div className="tabs tabs-border relative">
-  <input type="radio" name="my_tabs_2" className="tab" aria-label="সব চালান" />
+  <input type="radio" name="my_tabs_2" className="tab" aria-label="সব চালান" defaultChecked />
 {/* */}
   <div className="tab-content border-base-300 bg-base-100 p-10">
     {/* Tab content 1 */}
@@ -144,7 +144,7 @@ const GoToProfile = () => {
 
     </div>
 
-  <input type="radio" name="my_tabs_2" className="tab" aria-label="ডেলিভারি হিস্ট্রি" defaultChecked />
+  <input type="radio" name="my_tabs_2" className="tab" aria-label="ডেলিভারি হিস্ট্রি"  />
   <div className="tab-content border-base-300 bg-base-100 p-10">Tab content 2</div>
 
   <input type="radio" name="my_tabs_2" className="tab" aria-label="বাকি জমা হিস্ট্রি" />

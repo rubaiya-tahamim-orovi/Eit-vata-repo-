@@ -16,61 +16,62 @@ const Menu = () => {
             <div className=''>
                 <p className='text-[#8E8E93] pl-4'>Menu</p>
               <div className='ml-7 mt-3 space-y-4'>
-                  <Link to="/dashboard" className='flex items-center gap-2'>
+                  <Link to="/dashboard" className='flex items-center gap-2 border'>
                 <RxDashboard />
                 Dashboard
 
                 </Link>
 
-                <Link to="/payment" className='flex items-center gap-2'>
+                <Link to="/payment" className='flex items-center gap-2  border'>
                 Payment Khata
                 </Link>
             
-                 <Link to="/prdoucts" className='flex items-center gap-2'>
+                 <Link to="/prdoucts" className='flex items-center gap-2 border'>
                 <RxDashboard />
                 Delivery
 
                 </Link>
-                 <Link to="/toddelivery" className='flex items-center gap-2'>
+                 <Link to="/toddelivery" className='flex items-center gap-2 border'>
                 <RxDashboard />
                 Todays Delivery 
 
                 </Link>
 
                  
-                  <Link to="/willToday" className='flex items-center gap-2'>
+                  <Link to="/willToday" className='flex items-center gap-2 border'>
                
                 আজকে যাবে 
 
                 </Link>
    
-                  <Link to="/allDelivery" className='flex items-center gap-2'>
+                  <Link to="/allDelivery" className='flex items-center gap-2 border'>
                 All delivery
 
                 </Link>
               
-                  <Link to="/payments" className='flex items-center gap-2'>
+                  <Link to="/payments" className='flex items-center gap-2 border'>
                
                বাকি খাতা 
 
                 </Link>
-                  <Link to="/todayJoma" className='flex items-center gap-2'>
+                  <Link to="/todayJoma" className='flex items-center gap-2 border'>
                
                আজকের জমা
 
                 </Link>
                  
-                  <Link to="/goToProfile" className='flex items-center gap-2'>
+                  <Link to="/ajkeJomaDebe" className='flex items-center gap-2'>
               
-                Go to Profile
+              আজ জমা দেবে
+
+                </Link>
+                
+                  <Link to="/sobBaki" className='flex items-center gap-2'>
+          
+                সব বাকি লিস্ট
 
                 </Link>
                  {/* 
-                  <Link to="/expireAds" className='flex items-center gap-2'>
-               <GrAnnounce />
-                Expire Ads
-
-                </Link>
                   <Link to="/workHours" className='flex items-center gap-2'>
                 <GoHourglass />
               Work Hours

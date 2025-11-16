@@ -13,7 +13,7 @@ const Payment = () => {
 
     return (
         <div className='px-5 py-5'>
-            <div className='flex justify-between items-center'>
+            <div className='md:flex md:space-y-0 space-y-3 justify-between items-center'>
                 <div className='flex items-center gap-3'>
      <p onClick={() => setShowPayment(!showPayment)}
       className='bg-green-600 px-5 py-1 text-white rounded font-semibold cursor-pointer flex gap-1 items-center'>
@@ -24,15 +24,15 @@ const Payment = () => {
 
  <p className=' border border-green-600 px-5 py-1 text-green-600 rounded font-semibold'>মোট পেমেন্ট : 0 টাকা</p>
                 </div>
-           <div className='flex gap-3 items-center'>
+           <div className='md:flex md:space-y-0 space-y-3  md:gap-3 items-center'>
             <div className='flex items-center border border-gray-300 rounded '>
-                <input type="search" placeholder='সার্চ করুণ' className='px-3 outline-none py-1 ' />
+                <input type="search" placeholder='সার্চ করুণ' className='px-3 outline-none py-1 md:w-auto w-full' />
                 <p className='bg-gray-300 border-l border-gray-400 px-2 py-2 h-full flex flex-col justify-center'><IoSearchSharp className=' ' /></p>
             </div>
-            <div>
-                     <input type="date" name="hey"  id="" className='border border-gray-400 rounded px-3 py-1' />
+            <div className='md:flex-none flex md:justify-normal justify-end'>
+                     <input type="date" name="hey"  id="" className='border border-gray-400 rounded px-3 py-1 ' />
             </div>
-            <div>
+            <div className='md:flex-none flex md:justify-normal justify-end'>
              <p  className='flex items-center gap-2 border border-green-600
              font-semibold px-5 py-1 text-green-600 rounded'> <FaFileInvoice />  রিপোর্ট</p>
             </div>
@@ -43,7 +43,7 @@ const Payment = () => {
 
 <div className= {`overflow-hidden transition-all duration-300
     ease-out ${showPayment ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opcacity-0'}`}>
-<div  className='flex gap-3 items-end mt-5'>
+<div  className='flex md:flex-row flex-col md:justify-normal  gap-3 md:items-end items-start md:mt-5'>
 
     
    <div>
@@ -54,7 +54,7 @@ const Payment = () => {
 
    <div className=''>
      <p className='text-gray-600 text-sm'>পেমেন্টের বিবরন</p>
-    <input   type="text" className='border w-xs border-gray-300
+    <input   type="text" className='border md:w-xs w-32 border-gray-300
      rounded mt-1 outline-gray-400'  />
     
    </div>
@@ -90,47 +90,59 @@ const Payment = () => {
 </div>
 </div>
 {/* table section here */}
-<div>
-
-<table className='mt-10'>
-  <thead className=''>
-    <tr className='space-x-3.5 '>
-        <th className='py-1 bg-green-600 border border-green-800'><input type="text" name="hash" placeholder='#' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" /></th>
-        <th className='w-10 px-10  text-white bg-green-600 border border-green-800'><p className=' '>খতিয়ান</p></th>
-        <th className='px-10 bg-green-600 text-white border border-green-800'>পেমেন্টের বিবরন</th>
-        <th className='px-7 bg-green-600 border border-green-800'><input type="text" name="hash" placeholder='পরিমান' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" /></th>
-        <th  className='px-7 bg-green-600 text-white border border-green-800'>
-            <input type="text" name="hash" placeholder='মোট বিল ' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" /></th>
-        <th  className='px-5 bg-green-600 text-white border border-green-800'>
-            <input type="text" name="hash" placeholder='অগ্রিম' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" />
+<div className="mt-10 overflow-x-auto">
+  <table className="hidden md:table w-full border-collapse">
+    <thead>
+      <tr>
+        <th className="py-1 bg-green-600 border border-green-800">
+          <input type="text" placeholder="#" className="w-20 placeholder:text-white pl-3 outline-none" />
         </th>
-        <th  className='px-5 bg-green-600 text-white border border-green-800'>
-            <input type="text" name="hash" placeholder='কর্তন' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" />
+        <th className="w-10 px-10 text-white bg-green-600 border border-green-800">খতিয়ান</th>
+        <th className="px-10 bg-green-600 text-white border border-green-800">পেমেন্টের বিবরন</th>
+        <th className="px-7 bg-green-600 border border-green-800">
+          <input type="text" placeholder="পরিমান" className="w-20 placeholder:text-white pl-3 outline-none" />
         </th>
-        <th  className='px-5 bg-green-600 text-white border border-green-800'>
-            <input type="text" name="hash" placeholder='পেমেন্ট' className='
-        w-20 placeholder:text-white pl-3 outline-none'  id="" />
+        <th className="px-7 bg-green-600 text-white border border-green-800">
+          <input type="text" placeholder="মোট বিল" className="w-20 placeholder:text-white pl-3 outline-none" />
         </th>
+        <th className="px-5 bg-green-600 text-white border border-green-800">
+          <input type="text" placeholder="অগ্রিম" className="w-20 placeholder:text-white pl-3 outline-none" />
+        </th>
+        <th className="px-5 bg-green-600 text-white border border-green-800">
+          <input type="text" placeholder="কর্তন" className="w-20 placeholder:text-white pl-3 outline-none" />
+        </th>
+        <th className="px-5 bg-green-600 text-white border border-green-800">
+          <input type="text" placeholder="পেমেন্ট" className="w-20 placeholder:text-white pl-3 outline-none" />
+        </th>
+        <th className="px-5 bg-green-600 text-white border border-green-800">কম/বেশি</th>
+        <th className="px-5 bg-green-600 text-white border border-green-800">বাটন</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">hello</td>
+        <td className="border p-2">hello</td>
+      </tr>
+    </tbody>
+  </table>
 
-        <th  className='px-5 bg-green-600 text-white border border-green-800'>কম/বেশি</th>
-        <th  className='px-5 bg-green-600 text-white border border-green-800'>বাটন</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <th>hello</th>
-        <th>hello</th>
-    </tr>
-   
-  </tbody>
-</table>
+  {/* Mobile Card Layout */}
+  <div className="md:hidden space-y-4">
+    <div className="border border-green-400 rounded-lg p-4  shadow">
+      <p><span className="font-bold">#: </span>hello</p>
+      <p><span className="font-bold">খতিয়ান: </span>hello</p>
+      <p><span className="font-bold">পেমেন্টের বিবরন: </span>---</p>
+      <p><span className="font-bold">পরিমান: </span>---</p>
+      <p><span className="font-bold">মোট বিল: </span>---</p>
+      <p><span className="font-bold">অগ্রিম: </span>---</p>
+      <p><span className="font-bold">কর্তন: </span>---</p>
+      <p><span className="font-bold">পেমেন্ট: </span>---</p>
+      <p><span className="font-bold">কম/বেশি: </span>---</p>
+      <button className="mt-2 px-3 py-1 bg-green-600 text-white rounded">বাটন</button>
+    </div>
+  </div>
+</div>
 
- </div>
 
  {/* You can open the modal using document.getElementById('ID').showModal() method */}
 {/* <button className="btn" onClick={()=>document.getElementById('my_modal_3').showModal()}>open modal</button> */}
@@ -142,7 +154,7 @@ const Payment = () => {
       <button onClick={() => setShowModal(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
     </form>
 
-    <h3 className="font-bold text-xl text-green-600">খতিয়ান নির্বাচন করুণ!</h3>
+    <h3 className="font-bold md:text-xl text-lg text-green-600">খতিয়ান নির্বাচন করুণ!</h3>
      {/* <div className='flex items-center border border-gray-300 rounded w-full'>
                 <input type="search" placeholder='সার্চ করুণ' className='px-3 outline-none py-1 ' />
                 <p className='bg-gray-300 border-l border-gray-400 px-2 py-2 h-full flex flex-col justify-center'><IoSearchSharp className=' ' /></p>
@@ -153,7 +165,7 @@ const Payment = () => {
               px-3 placeholder:text-sm' />
               <p className='bg-gray-300 py-2.5 px-2'><IoSearchSharp/></p>
             </div>
-<div className='grid grid-cols-4 gap-4'>
+<div className='grid md:grid-cols-4 grid-cols-2 gap-4'>
 
 
   <details className="dropdown w-full dropdown-center">

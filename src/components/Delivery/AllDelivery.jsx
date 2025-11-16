@@ -4,17 +4,21 @@ import { FaFileInvoice } from "react-icons/fa6";
 import { CiMenuKebab } from "react-icons/ci";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { CiCalendar } from "react-icons/ci";
+import { RiEBike2Fill } from "react-icons/ri";
+import { RiProfileFill } from "react-icons/ri";
+import { Link } from 'react-router';
 
 const AllDelivery = () => {
     return (
         <div className='px-5 py-5'>
                <div >
             
-                           <div className='md:flex justify-between md:space-y-0 space-y-3 items-center gap-4'>
+                           <div className='md:flex justify-between md:space-y-0 space-y-3 items-center gap-4 '>
             
                       
-                        <div className='flex  items-center gap-4 border border-gray-300 rounded w-full'>
-                           <input type="search" placeholder='সার্চ করুণ' className='px-3 outline-none py-1 w-full' />
+                        <div className='flex  items-center gap-4 border border-gray-300 rounded w-full '>
+                           <input type="search" placeholder='সার্চ করুণ' className='px-3 outline-none py-1 w-full ' />
                         <p className='bg-gray-300 border-l border-gray-400 px-2 py-2 h-full flex flex-col
                          justify-center'><IoSearchSharp className=' ' /></p>
                             </div> 
@@ -34,10 +38,10 @@ const AllDelivery = () => {
                        {/* table section here */}
             
             
-            <div className="mt-10">
+            <div className="mt-10 ">
               {/* Table for medium+ screens */}
-              <div className="hidden md:block overflow-x-auto">
-                <table className="min-w-full border-collapse">
+              <div className="hidden md:block overflow-x-auto ">
+                <table className="min-w-full border-collapse mb-14 mt-5">
                   <thead>
                     <tr>
                     
@@ -70,8 +74,19 @@ const AllDelivery = () => {
                       <td className="border border-gray-400 text-center">0</td>
                       <td className="border border-gray-400 text-center"></td>
                       <td className="border border-gray-400 text-center">12/09/25</td>
-                       <td className="border border-gray-400 py-1 flex justify-center text-center">
-                                 <CiMenuKebab className="border border-gray-300 py-0.5 text-xl text-center" />
+                       <td className="border border-gray-400 py-1 flex justify-center text-center
+                       cursor-pointer dropdown dropdown-left dropdown-center ">
+                                 <CiMenuKebab className="border border-gray-300 py-0.5 text-xl text-center " tabIndex={0} role="button"  />
+                              
+                              <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <Link to="/goToProfile"><a className='hover:text-green-600 flex items-center
+     gap-3 pl-3 py-1.5 hover:bg-gray-100'><CiCalendar /> তারিখ পরিবর্তন </a></Link>
+    <Link to="/goToProfile"><a className='hover:text-green-600 flex items-center
+     gap-3 pl-3 py-1.5 hover:bg-gray-100'> <RiEBike2Fill /> ডেলিভারি দিন </a></Link>
+    <Link to="/goToProfile"><a className='hover:text-green-600 flex items-center
+     gap-3 pl-3 py-1.5 hover:bg-gray-100'> <RiProfileFill /> প্রোফাইল এ যান </a></Link>
+    {/* <Link to="/goToProfile"><a className='hover:text-green-600'><CiCalendar /> তারিখ পরিবর্তন </a></Link> */}
+  </ul>
                                </td>
                      
                     
